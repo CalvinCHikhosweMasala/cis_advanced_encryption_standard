@@ -1,0 +1,531 @@
+AES-128 Avalanche Effect Report
+================================
+
+=== Plaintext bit-flip test ===
+Base plaintext : 00112233445566778899aabbccddeeff
+Base key       : 000102030405060708090a0b0c0d0e0f
+Base ciphertext: 69c4e0d86a7b0430d8cdb78070b4c55a
+
+Flip bit   0 (byte[ 0] bit 0): 0x00 -> 0x01 | plaintext: 01112233445566778899aabbccddeeff
+    ciphertext: a556156c72876577f67f95a9d9e640a7 | differing bits:  62 / 128 (48.4%)
+Flip bit   1 (byte[ 0] bit 1): 0x00 -> 0x02 | plaintext: 02112233445566778899aabbccddeeff
+    ciphertext: a7c46bebce78544d528895ad4553702c | differing bits:  58 / 128 (45.3%)
+Flip bit   2 (byte[ 0] bit 2): 0x00 -> 0x04 | plaintext: 04112233445566778899aabbccddeeff
+    ciphertext: 4309de7b57594044d6949be94f16cdf4 | differing bits:  59 / 128 (46.1%)
+Flip bit   3 (byte[ 0] bit 3): 0x00 -> 0x08 | plaintext: 08112233445566778899aabbccddeeff
+    ciphertext: 52ffd81c400c8702546a94caa5d5e188 | differing bits:  59 / 128 (46.1%)
+Flip bit   4 (byte[ 0] bit 4): 0x00 -> 0x10 | plaintext: 10112233445566778899aabbccddeeff
+    ciphertext: 0761adfd2febd4d105b1ac2ff88171b3 | differing bits:  64 / 128 (50.0%)
+Flip bit   5 (byte[ 0] bit 5): 0x00 -> 0x20 | plaintext: 20112233445566778899aabbccddeeff
+    ciphertext: dbe85527b4d0b855533f6b1ba143e894 | differing bits:  79 / 128 (61.7%)
+Flip bit   6 (byte[ 0] bit 6): 0x00 -> 0x40 | plaintext: 40112233445566778899aabbccddeeff
+    ciphertext: a0034e574a85f21afd378272727b6a02 | differing bits:  70 / 128 (54.7%)
+Flip bit   7 (byte[ 0] bit 7): 0x00 -> 0x80 | plaintext: 80112233445566778899aabbccddeeff
+    ciphertext: c4b6cc20a1961062ee8104adb441b569 | differing bits:  65 / 128 (50.8%)
+Flip bit   8 (byte[ 1] bit 0): 0x11 -> 0x10 | plaintext: 00102233445566778899aabbccddeeff
+    ciphertext: 22965a00b4b6d4b1ffefb96c89a21230 | differing bits:  65 / 128 (50.8%)
+Flip bit   9 (byte[ 1] bit 1): 0x11 -> 0x13 | plaintext: 00132233445566778899aabbccddeeff
+    ciphertext: 3ab6f6792329fbc5cb3d0a2b033d1820 | differing bits:  71 / 128 (55.5%)
+Flip bit  10 (byte[ 1] bit 2): 0x11 -> 0x15 | plaintext: 00152233445566778899aabbccddeeff
+    ciphertext: e87e7a2837fa5d63a9070a0c90fec0db | differing bits:  57 / 128 (44.5%)
+Flip bit  11 (byte[ 1] bit 3): 0x11 -> 0x19 | plaintext: 00192233445566778899aabbccddeeff
+    ciphertext: 41a8d1cf28a3676974bbe7cdfbe1b79b | differing bits:  57 / 128 (44.5%)
+Flip bit  12 (byte[ 1] bit 4): 0x11 -> 0x01 | plaintext: 00012233445566778899aabbccddeeff
+    ciphertext: b566c08dba7decde436e945c60e4f8e6 | differing bits:  58 / 128 (45.3%)
+Flip bit  13 (byte[ 1] bit 5): 0x11 -> 0x31 | plaintext: 00312233445566778899aabbccddeeff
+    ciphertext: 3ee704bb8d8d8eef7a8a9435cdc017ae | differing bits:  72 / 128 (56.3%)
+Flip bit  14 (byte[ 1] bit 6): 0x11 -> 0x51 | plaintext: 00512233445566778899aabbccddeeff
+    ciphertext: 6526b02882f46754c8515bbaec8a6d1a | differing bits:  55 / 128 (43.0%)
+Flip bit  15 (byte[ 1] bit 7): 0x11 -> 0x91 | plaintext: 00912233445566778899aabbccddeeff
+    ciphertext: b1e86ac62378045dfe6af05d2823513c | differing bits:  57 / 128 (44.5%)
+Flip bit  16 (byte[ 2] bit 0): 0x22 -> 0x23 | plaintext: 00112333445566778899aabbccddeeff
+    ciphertext: 8f0a81042baf6702a0cb2230da5dc42a | differing bits:  57 / 128 (44.5%)
+Flip bit  17 (byte[ 2] bit 1): 0x22 -> 0x20 | plaintext: 00112033445566778899aabbccddeeff
+    ciphertext: 5a0e4d36e89467324eeb3b0a69a5549b | differing bits:  57 / 128 (44.5%)
+Flip bit  18 (byte[ 2] bit 2): 0x22 -> 0x26 | plaintext: 00112633445566778899aabbccddeeff
+    ciphertext: a13909dc2de0f4bb0df4f81184d44ef5 | differing bits:  67 / 128 (52.3%)
+Flip bit  19 (byte[ 2] bit 3): 0x22 -> 0x2a | plaintext: 00112a33445566778899aabbccddeeff
+    ciphertext: 93df8b4f2e168d2a0d37776e6c80fa23 | differing bits:  69 / 128 (53.9%)
+Flip bit  20 (byte[ 2] bit 4): 0x22 -> 0x32 | plaintext: 00113233445566778899aabbccddeeff
+    ciphertext: 90e6004c10980d26226f3bf2fe4727b2 | differing bits:  63 / 128 (49.2%)
+Flip bit  21 (byte[ 2] bit 5): 0x22 -> 0x02 | plaintext: 00110233445566778899aabbccddeeff
+    ciphertext: 75d5e6bdf81f1a4261bcc80cf51df580 | differing bits:  58 / 128 (45.3%)
+Flip bit  22 (byte[ 2] bit 6): 0x22 -> 0x62 | plaintext: 00116233445566778899aabbccddeeff
+    ciphertext: 10a032b60ea1c7ef28c745a9f108a62f | differing bits:  66 / 128 (51.6%)
+Flip bit  23 (byte[ 2] bit 7): 0x22 -> 0xa2 | plaintext: 0011a233445566778899aabbccddeeff
+    ciphertext: e4909a149750456829ed36761463252e | differing bits:  62 / 128 (48.4%)
+Flip bit  24 (byte[ 3] bit 0): 0x33 -> 0x32 | plaintext: 00112232445566778899aabbccddeeff
+    ciphertext: f46757cdbb9e51b385a729c7ac8d5ae2 | differing bits:  71 / 128 (55.5%)
+Flip bit  25 (byte[ 3] bit 1): 0x33 -> 0x31 | plaintext: 00112231445566778899aabbccddeeff
+    ciphertext: ac998a0840b566cfabc3627fe8aad0ff | differing bits:  70 / 128 (54.7%)
+Flip bit  26 (byte[ 3] bit 2): 0x33 -> 0x37 | plaintext: 00112237445566778899aabbccddeeff
+    ciphertext: 5ddce3c663fc4f0b253683e0b7283476 | differing bits:  62 / 128 (48.4%)
+Flip bit  27 (byte[ 3] bit 3): 0x33 -> 0x3b | plaintext: 0011223b445566778899aabbccddeeff
+    ciphertext: e92054043189fafadd530d6f20e746c6 | differing bits:  67 / 128 (52.3%)
+Flip bit  28 (byte[ 3] bit 4): 0x33 -> 0x23 | plaintext: 00112223445566778899aabbccddeeff
+    ciphertext: b51f032d556a45928543b9388b7cbee0 | differing bits:  72 / 128 (56.3%)
+Flip bit  29 (byte[ 3] bit 5): 0x33 -> 0x13 | plaintext: 00112213445566778899aabbccddeeff
+    ciphertext: 9d7ff5f86818f745bd821b3fa7c3ace1 | differing bits:  73 / 128 (57.0%)
+Flip bit  30 (byte[ 3] bit 6): 0x33 -> 0x73 | plaintext: 00112273445566778899aabbccddeeff
+    ciphertext: 0056d9612e4386d919b44af755fb2912 | differing bits:  64 / 128 (50.0%)
+Flip bit  31 (byte[ 3] bit 7): 0x33 -> 0xb3 | plaintext: 001122b3445566778899aabbccddeeff
+    ciphertext: f86926a2b048de75fed2e5e2988f0370 | differing bits:  64 / 128 (50.0%)
+Flip bit  32 (byte[ 4] bit 0): 0x44 -> 0x45 | plaintext: 00112233455566778899aabbccddeeff
+    ciphertext: 6c6785c208bf568cc03a3c78040c644a | differing bits:  57 / 128 (44.5%)
+Flip bit  33 (byte[ 4] bit 1): 0x44 -> 0x46 | plaintext: 00112233465566778899aabbccddeeff
+    ciphertext: 4b7330ac4ca9add638aff37eb8887408 | differing bits:  60 / 128 (46.9%)
+Flip bit  34 (byte[ 4] bit 2): 0x44 -> 0x40 | plaintext: 00112233405566778899aabbccddeeff
+    ciphertext: 472480c8b44fc41b8ebdeea5f9b22ef0 | differing bits:  54 / 128 (42.2%)
+Flip bit  35 (byte[ 4] bit 3): 0x44 -> 0x4c | plaintext: 001122334c5566778899aabbccddeeff
+    ciphertext: 1fb715f356acf0560a07fd652a468968 | differing bits:  70 / 128 (54.7%)
+Flip bit  36 (byte[ 4] bit 4): 0x44 -> 0x54 | plaintext: 00112233545566778899aabbccddeeff
+    ciphertext: b4922297197c35668023de72b96d2125 | differing bits:  71 / 128 (55.5%)
+Flip bit  37 (byte[ 4] bit 5): 0x44 -> 0x64 | plaintext: 00112233645566778899aabbccddeeff
+    ciphertext: b870c9f3cb66b4f358ac852d304008cf | differing bits:  56 / 128 (43.8%)
+Flip bit  38 (byte[ 4] bit 6): 0x44 -> 0x04 | plaintext: 00112233045566778899aabbccddeeff
+    ciphertext: 9d4fac01ce405910a231f2cc8e11804f | differing bits:  65 / 128 (50.8%)
+Flip bit  39 (byte[ 4] bit 7): 0x44 -> 0xc4 | plaintext: 00112233c45566778899aabbccddeeff
+    ciphertext: 45dc4a9ca80e57c04bfad4b5f7bc1d3c | differing bits:  57 / 128 (44.5%)
+Flip bit  40 (byte[ 5] bit 0): 0x55 -> 0x54 | plaintext: 00112233445466778899aabbccddeeff
+    ciphertext: 5ff6ecbb29c4def2de2eefe10873b0e5 | differing bits:  65 / 128 (50.8%)
+Flip bit  41 (byte[ 5] bit 1): 0x55 -> 0x57 | plaintext: 00112233445766778899aabbccddeeff
+    ciphertext: ab83bd6a733ac6db8883e899d2ec57bd | differing bits:  60 / 128 (46.9%)
+Flip bit  42 (byte[ 5] bit 2): 0x55 -> 0x51 | plaintext: 00112233445166778899aabbccddeeff
+    ciphertext: 5003741abae53c8cd994ed3150dc4182 | differing bits:  54 / 128 (42.2%)
+Flip bit  43 (byte[ 5] bit 3): 0x55 -> 0x5d | plaintext: 00112233445d66778899aabbccddeeff
+    ciphertext: 2351c041a2fc8ff76151ceecfd99485f | differing bits:  60 / 128 (46.9%)
+Flip bit  44 (byte[ 5] bit 4): 0x55 -> 0x45 | plaintext: 00112233444566778899aabbccddeeff
+    ciphertext: 8b2a365b91b26a1699369e733004688d | differing bits:  70 / 128 (54.7%)
+Flip bit  45 (byte[ 5] bit 5): 0x55 -> 0x75 | plaintext: 00112233447566778899aabbccddeeff
+    ciphertext: bc4c5a21c875272a6a0e1d347964469e | differing bits:  57 / 128 (44.5%)
+Flip bit  46 (byte[ 5] bit 6): 0x55 -> 0x15 | plaintext: 00112233441566778899aabbccddeeff
+    ciphertext: b9caf86e97167a474a1d4d3b182ede04 | differing bits:  71 / 128 (55.5%)
+Flip bit  47 (byte[ 5] bit 7): 0x55 -> 0xd5 | plaintext: 0011223344d566778899aabbccddeeff
+    ciphertext: b047a6a8786bfd8c56d29c08ee5e86fc | differing bits:  60 / 128 (46.9%)
+Flip bit  48 (byte[ 6] bit 0): 0x66 -> 0x67 | plaintext: 00112233445567778899aabbccddeeff
+    ciphertext: 33999e30ec759ec0cf998c911bfc968e | differing bits:  62 / 128 (48.4%)
+Flip bit  49 (byte[ 6] bit 1): 0x66 -> 0x64 | plaintext: 00112233445564778899aabbccddeeff
+    ciphertext: 78a7878838d4931688d1147c576d2d43 | differing bits:  61 / 128 (47.7%)
+Flip bit  50 (byte[ 6] bit 2): 0x66 -> 0x62 | plaintext: 00112233445562778899aabbccddeeff
+    ciphertext: bda2bb9cff69740ba870d62afa918df5 | differing bits:  59 / 128 (46.1%)
+Flip bit  51 (byte[ 6] bit 3): 0x66 -> 0x6e | plaintext: 0011223344556e778899aabbccddeeff
+    ciphertext: b58624bad4d46330b137a84944135afb | differing bits:  66 / 128 (51.6%)
+Flip bit  52 (byte[ 6] bit 4): 0x66 -> 0x76 | plaintext: 00112233445576778899aabbccddeeff
+    ciphertext: c19bca23a81e440d3d256f77ea3fe245 | differing bits:  69 / 128 (53.9%)
+Flip bit  53 (byte[ 6] bit 5): 0x66 -> 0x46 | plaintext: 00112233445546778899aabbccddeeff
+    ciphertext: c7b98cfbfcd32a029a29d8e3c026ffc7 | differing bits:  63 / 128 (49.2%)
+Flip bit  54 (byte[ 6] bit 6): 0x66 -> 0x26 | plaintext: 00112233445526778899aabbccddeeff
+    ciphertext: 5fdc669042779e189ecfd349446dcd35 | differing bits:  47 / 128 (36.7%)
+Flip bit  55 (byte[ 6] bit 7): 0x66 -> 0xe6 | plaintext: 001122334455e6778899aabbccddeeff
+    ciphertext: 6d6aad96e9c06174304d2ef7d8011ede | differing bits:  60 / 128 (46.9%)
+Flip bit  56 (byte[ 7] bit 0): 0x77 -> 0x76 | plaintext: 00112233445566768899aabbccddeeff
+    ciphertext: 1788db141aa96296cede493039881bf3 | differing bits:  66 / 128 (51.6%)
+Flip bit  57 (byte[ 7] bit 1): 0x77 -> 0x75 | plaintext: 00112233445566758899aabbccddeeff
+    ciphertext: 816247e3a11863920e354c56d2a17346 | differing bits:  71 / 128 (55.5%)
+Flip bit  58 (byte[ 7] bit 2): 0x77 -> 0x73 | plaintext: 00112233445566738899aabbccddeeff
+    ciphertext: 9ff2c12c4f4061d16e8701543485358d | differing bits:  65 / 128 (50.8%)
+Flip bit  59 (byte[ 7] bit 3): 0x77 -> 0x7f | plaintext: 001122334455667f8899aabbccddeeff
+    ciphertext: d651dbabff47fc086b352442bf77c7ed | differing bits:  71 / 128 (55.5%)
+Flip bit  60 (byte[ 7] bit 4): 0x77 -> 0x67 | plaintext: 00112233445566678899aabbccddeeff
+    ciphertext: b5e3d88ed17ba3ad6f091a8209280094 | differing bits:  65 / 128 (50.8%)
+Flip bit  61 (byte[ 7] bit 5): 0x77 -> 0x57 | plaintext: 00112233445566578899aabbccddeeff
+    ciphertext: a4ed316593c0fe7633c2c39b21076442 | differing bits:  70 / 128 (54.7%)
+Flip bit  62 (byte[ 7] bit 6): 0x77 -> 0x37 | plaintext: 00112233445566378899aabbccddeeff
+    ciphertext: b479ebc97ef742ca74c1af3e81ed0c8e | differing bits:  62 / 128 (48.4%)
+Flip bit  63 (byte[ 7] bit 7): 0x77 -> 0xf7 | plaintext: 00112233445566f78899aabbccddeeff
+    ciphertext: 1e50a872722863b8c11f4e49dc60eac9 | differing bits:  62 / 128 (48.4%)
+Flip bit  64 (byte[ 8] bit 0): 0x88 -> 0x89 | plaintext: 00112233445566778999aabbccddeeff
+    ciphertext: 926d06d09c6483198260104af2b79c54 | differing bits:  64 / 128 (50.0%)
+Flip bit  65 (byte[ 8] bit 1): 0x88 -> 0x8a | plaintext: 00112233445566778a99aabbccddeeff
+    ciphertext: 7ac8a99cd7c344951922f23fef793442 | differing bits:  63 / 128 (49.2%)
+Flip bit  66 (byte[ 8] bit 2): 0x88 -> 0x8c | plaintext: 00112233445566778c99aabbccddeeff
+    ciphertext: ae5e0530c32bec2afe04e9e3053b82e0 | differing bits:  66 / 128 (51.6%)
+Flip bit  67 (byte[ 8] bit 3): 0x88 -> 0x80 | plaintext: 00112233445566778099aabbccddeeff
+    ciphertext: 65dc38e80a8258905ec8a82fde91d2e0 | differing bits:  57 / 128 (44.5%)
+Flip bit  68 (byte[ 8] bit 4): 0x88 -> 0x98 | plaintext: 00112233445566779899aabbccddeeff
+    ciphertext: d89023ae79b273e7750d0f3b47782b51 | differing bits:  70 / 128 (54.7%)
+Flip bit  69 (byte[ 8] bit 5): 0x88 -> 0xa8 | plaintext: 0011223344556677a899aabbccddeeff
+    ciphertext: 536d01ef0f73250a05fbc66bbe6ad2b2 | differing bits:  67 / 128 (52.3%)
+Flip bit  70 (byte[ 8] bit 6): 0x88 -> 0xc8 | plaintext: 0011223344556677c899aabbccddeeff
+    ciphertext: c892983f870dcc4ae41344039325175e | differing bits:  68 / 128 (53.1%)
+Flip bit  71 (byte[ 8] bit 7): 0x88 -> 0x08 | plaintext: 00112233445566770899aabbccddeeff
+    ciphertext: eadf2bca372f94a06655787be3134fc4 | differing bits:  65 / 128 (50.8%)
+Flip bit  72 (byte[ 9] bit 0): 0x99 -> 0x98 | plaintext: 00112233445566778898aabbccddeeff
+    ciphertext: 9927db3cf2be10989b231d2f14b4671f | differing bits:  58 / 128 (45.3%)
+Flip bit  73 (byte[ 9] bit 1): 0x99 -> 0x9b | plaintext: 0011223344556677889baabbccddeeff
+    ciphertext: 219f41d14db0442822f6d9483b4c48ce | differing bits:  59 / 128 (46.1%)
+Flip bit  74 (byte[ 9] bit 2): 0x99 -> 0x9d | plaintext: 0011223344556677889daabbccddeeff
+    ciphertext: 53864cc77ad4694feb69b662c1f47230 | differing bits:  61 / 128 (47.7%)
+Flip bit  75 (byte[ 9] bit 3): 0x99 -> 0x91 | plaintext: 00112233445566778891aabbccddeeff
+    ciphertext: c149ccab1147d0dab79897fb61d28a6a | differing bits:  64 / 128 (50.0%)
+Flip bit  76 (byte[ 9] bit 4): 0x99 -> 0x89 | plaintext: 00112233445566778889aabbccddeeff
+    ciphertext: 61bd5448c97e671cc94274fba973c45e | differing bits:  54 / 128 (42.2%)
+Flip bit  77 (byte[ 9] bit 5): 0x99 -> 0xb9 | plaintext: 001122334455667788b9aabbccddeeff
+    ciphertext: 68a3c728a75eb283b07e997e974b3548 | differing bits:  71 / 128 (55.5%)
+Flip bit  78 (byte[ 9] bit 6): 0x99 -> 0xd9 | plaintext: 001122334455667788d9aabbccddeeff
+    ciphertext: 9d3232241e557d0a809b4097e8b14b4d | differing bits:  69 / 128 (53.9%)
+Flip bit  79 (byte[ 9] bit 7): 0x99 -> 0x19 | plaintext: 00112233445566778819aabbccddeeff
+    ciphertext: 93712665ff43f7fa5c9cf2d6a6077cd8 | differing bits:  67 / 128 (52.3%)
+Flip bit  80 (byte[10] bit 0): 0xaa -> 0xab | plaintext: 00112233445566778899abbbccddeeff
+    ciphertext: 6cc03b7ed29d0cd33a3b7f449c470d3e | differing bits:  61 / 128 (47.7%)
+Flip bit  81 (byte[10] bit 1): 0xaa -> 0xa8 | plaintext: 00112233445566778899a8bbccddeeff
+    ciphertext: afff06870bc9763d1e432de1a89164d8 | differing bits:  61 / 128 (47.7%)
+Flip bit  82 (byte[10] bit 2): 0xaa -> 0xae | plaintext: 00112233445566778899aebbccddeeff
+    ciphertext: 84494da02f2a323652299b9f80f9b787 | differing bits:  64 / 128 (50.0%)
+Flip bit  83 (byte[10] bit 3): 0xaa -> 0xa2 | plaintext: 00112233445566778899a2bbccddeeff
+    ciphertext: f69f69410af1ecc00e619d89483ebe8f | differing bits:  62 / 128 (48.4%)
+Flip bit  84 (byte[10] bit 4): 0xaa -> 0xba | plaintext: 00112233445566778899babbccddeeff
+    ciphertext: bf8ca3accabdbf929c682b9790bb7821 | differing bits:  62 / 128 (48.4%)
+Flip bit  85 (byte[10] bit 5): 0xaa -> 0x8a | plaintext: 001122334455667788998abbccddeeff
+    ciphertext: 712a914f7de646ea6fae0891c470cbee | differing bits:  66 / 128 (51.6%)
+Flip bit  86 (byte[10] bit 6): 0xaa -> 0xea | plaintext: 00112233445566778899eabbccddeeff
+    ciphertext: 43bc6421907cfe4b81b5dec7b64e96d3 | differing bits:  69 / 128 (53.9%)
+Flip bit  87 (byte[10] bit 7): 0xaa -> 0x2a | plaintext: 001122334455667788992abbccddeeff
+    ciphertext: 0ae101f7f0b64182709b3de63d327452 | differing bits:  58 / 128 (45.3%)
+Flip bit  88 (byte[11] bit 0): 0xbb -> 0xba | plaintext: 00112233445566778899aabaccddeeff
+    ciphertext: fdb58cfc861dc684fe8b8339c016356c | differing bits:  57 / 128 (44.5%)
+Flip bit  89 (byte[11] bit 1): 0xbb -> 0xb9 | plaintext: 00112233445566778899aab9ccddeeff
+    ciphertext: 40f27c77e513cf004e2662ea7e5c30a3 | differing bits:  70 / 128 (54.7%)
+Flip bit  90 (byte[11] bit 2): 0xbb -> 0xbf | plaintext: 00112233445566778899aabfccddeeff
+    ciphertext: 53e515e8279c656d17a92911f750e107 | differing bits:  64 / 128 (50.0%)
+Flip bit  91 (byte[11] bit 3): 0xbb -> 0xb3 | plaintext: 00112233445566778899aab3ccddeeff
+    ciphertext: f20f4021517b30244697ff24ff27f045 | differing bits:  60 / 128 (46.9%)
+Flip bit  92 (byte[11] bit 4): 0xbb -> 0xab | plaintext: 00112233445566778899aaabccddeeff
+    ciphertext: 9edc1d3df14b2ffcbd934bb8f66d9dcf | differing bits:  69 / 128 (53.9%)
+Flip bit  93 (byte[11] bit 5): 0xbb -> 0x9b | plaintext: 00112233445566778899aa9bccddeeff
+    ciphertext: 1398a4bcf49b74593d32c161e282c3fc | differing bits:  64 / 128 (50.0%)
+Flip bit  94 (byte[11] bit 6): 0xbb -> 0xfb | plaintext: 00112233445566778899aafbccddeeff
+    ciphertext: 1f619da61ffe62253c74ffd03bbadfcd | differing bits:  64 / 128 (50.0%)
+Flip bit  95 (byte[11] bit 7): 0xbb -> 0x3b | plaintext: 00112233445566778899aa3bccddeeff
+    ciphertext: 8b56fa3b144898882d9dc2a19344d21c | differing bits:  64 / 128 (50.0%)
+Flip bit  96 (byte[12] bit 0): 0xcc -> 0xcd | plaintext: 00112233445566778899aabbcdddeeff
+    ciphertext: 06250d85c75610d70f222ce6f9dadec3 | differing bits:  76 / 128 (59.4%)
+Flip bit  97 (byte[12] bit 1): 0xcc -> 0xce | plaintext: 00112233445566778899aabbceddeeff
+    ciphertext: b8988fc19c60a000a8ce3056182a87bd | differing bits:  62 / 128 (48.4%)
+Flip bit  98 (byte[12] bit 2): 0xcc -> 0xc8 | plaintext: 00112233445566778899aabbc8ddeeff
+    ciphertext: 1e0e58b9915d1b35d39e265db594d32a | differing bits:  61 / 128 (47.7%)
+Flip bit  99 (byte[12] bit 3): 0xcc -> 0xc4 | plaintext: 00112233445566778899aabbc4ddeeff
+    ciphertext: 01031ed84eea72ad49a164eda991697c | differing bits:  62 / 128 (48.4%)
+Flip bit 100 (byte[12] bit 4): 0xcc -> 0xdc | plaintext: 00112233445566778899aabbdcddeeff
+    ciphertext: bd40e5044a797c12d155a9935df4b7bf | differing bits:  47 / 128 (36.7%)
+Flip bit 101 (byte[12] bit 5): 0xcc -> 0xec | plaintext: 00112233445566778899aabbecddeeff
+    ciphertext: c98952dc520c001d24a7a037d462ecc2 | differing bits:  59 / 128 (46.1%)
+Flip bit 102 (byte[12] bit 6): 0xcc -> 0x8c | plaintext: 00112233445566778899aabb8cddeeff
+    ciphertext: 07721bc561e44af116b376e111b2c8da | differing bits:  63 / 128 (49.2%)
+Flip bit 103 (byte[12] bit 7): 0xcc -> 0x4c | plaintext: 00112233445566778899aabb4cddeeff
+    ciphertext: b55adbbed49239f14d8bc4ee63de0e5a | differing bits:  67 / 128 (52.3%)
+Flip bit 104 (byte[13] bit 0): 0xdd -> 0xdc | plaintext: 00112233445566778899aabbccdceeff
+    ciphertext: 4bf7f83da892f6ee229c8b1c48bff484 | differing bits:  64 / 128 (50.0%)
+Flip bit 105 (byte[13] bit 1): 0xdd -> 0xdf | plaintext: 00112233445566778899aabbccdfeeff
+    ciphertext: 3a6230aac924217bcea65f81434f1ae2 | differing bits:  67 / 128 (52.3%)
+Flip bit 106 (byte[13] bit 2): 0xdd -> 0xd9 | plaintext: 00112233445566778899aabbccd9eeff
+    ciphertext: 4f9c4c74c9d8b090611f11b6ee157cd9 | differing bits:  61 / 128 (47.7%)
+Flip bit 107 (byte[13] bit 3): 0xdd -> 0xd5 | plaintext: 00112233445566778899aabbccd5eeff
+    ciphertext: 5d8024e08e0f0ef4adead2934e3a1007 | differing bits:  59 / 128 (46.1%)
+Flip bit 108 (byte[13] bit 4): 0xdd -> 0xcd | plaintext: 00112233445566778899aabbcccdeeff
+    ciphertext: 8626c56ddc637bbffd4f391e5cb168b8 | differing bits:  66 / 128 (51.6%)
+Flip bit 109 (byte[13] bit 5): 0xdd -> 0xfd | plaintext: 00112233445566778899aabbccfdeeff
+    ciphertext: 91977de6626c7779c9795d27060b33b6 | differing bits:  71 / 128 (55.5%)
+Flip bit 110 (byte[13] bit 6): 0xdd -> 0x9d | plaintext: 00112233445566778899aabbcc9deeff
+    ciphertext: ace44d5b71314f77560f82f71586dabc | differing bits:  62 / 128 (48.4%)
+Flip bit 111 (byte[13] bit 7): 0xdd -> 0x5d | plaintext: 00112233445566778899aabbcc5deeff
+    ciphertext: 32fe831a2a00884f14e9f821d7f1eaef | differing bits:  65 / 128 (50.8%)
+Flip bit 112 (byte[14] bit 0): 0xee -> 0xef | plaintext: 00112233445566778899aabbccddefff
+    ciphertext: 336184aba820a1ccac169be501d0c96e | differing bits:  63 / 128 (49.2%)
+Flip bit 113 (byte[14] bit 1): 0xee -> 0xec | plaintext: 00112233445566778899aabbccddecff
+    ciphertext: 0e330bbd99eb61baad580dc53e4215e1 | differing bits:  73 / 128 (57.0%)
+Flip bit 114 (byte[14] bit 2): 0xee -> 0xea | plaintext: 00112233445566778899aabbccddeaff
+    ciphertext: 6f612a91e9ccb8ae49e9eb60355478f4 | differing bits:  61 / 128 (47.7%)
+Flip bit 115 (byte[14] bit 3): 0xee -> 0xe6 | plaintext: 00112233445566778899aabbccdde6ff
+    ciphertext: 39286f445ede02c72e24db22510b4f88 | differing bits:  66 / 128 (51.6%)
+Flip bit 116 (byte[14] bit 4): 0xee -> 0xfe | plaintext: 00112233445566778899aabbccddfeff
+    ciphertext: 1155609e693b8969f9d2750bd2cae33f | differing bits:  52 / 128 (40.6%)
+Flip bit 117 (byte[14] bit 5): 0xee -> 0xce | plaintext: 00112233445566778899aabbccddceff
+    ciphertext: d10b648d12ec6928419c29bf19e28844 | differing bits:  66 / 128 (51.6%)
+Flip bit 118 (byte[14] bit 6): 0xee -> 0xae | plaintext: 00112233445566778899aabbccddaeff
+    ciphertext: ffb051c8c62610727b1e86965c24e959 | differing bits:  51 / 128 (39.8%)
+Flip bit 119 (byte[14] bit 7): 0xee -> 0x6e | plaintext: 00112233445566778899aabbccdd6eff
+    ciphertext: 81cf905b9bc9d05d14fe5997fad507dd | differing bits:  62 / 128 (48.4%)
+Flip bit 120 (byte[15] bit 0): 0xff -> 0xfe | plaintext: 00112233445566778899aabbccddeefe
+    ciphertext: c32d9c183e5b132e3e43fd740aa1290f | differing bits:  62 / 128 (48.4%)
+Flip bit 121 (byte[15] bit 1): 0xff -> 0xfd | plaintext: 00112233445566778899aabbccddeefd
+    ciphertext: 327af5c66e172adb3388c61503a63922 | differing bits:  67 / 128 (52.3%)
+Flip bit 122 (byte[15] bit 2): 0xff -> 0xfb | plaintext: 00112233445566778899aabbccddeefb
+    ciphertext: 96fcb84bd96828a4472715f933fa8cd2 | differing bits:  63 / 128 (49.2%)
+Flip bit 123 (byte[15] bit 3): 0xff -> 0xf7 | plaintext: 00112233445566778899aabbccddeef7
+    ciphertext: e1652838797c199108e372e60af74585 | differing bits:  55 / 128 (43.0%)
+Flip bit 124 (byte[15] bit 4): 0xff -> 0xef | plaintext: 00112233445566778899aabbccddeeef
+    ciphertext: f45504ea409a3650331d08023e758cb5 | differing bits:  62 / 128 (48.4%)
+Flip bit 125 (byte[15] bit 5): 0xff -> 0xdf | plaintext: 00112233445566778899aabbccddeedf
+    ciphertext: 4c558e610c73228f1d6ac0fad4e0b8b7 | differing bits:  69 / 128 (53.9%)
+Flip bit 126 (byte[15] bit 6): 0xff -> 0xbf | plaintext: 00112233445566778899aabbccddeebf
+    ciphertext: 278371237dd49ab6e817b62c82efc96f | differing bits:  64 / 128 (50.0%)
+Flip bit 127 (byte[15] bit 7): 0xff -> 0x7f | plaintext: 00112233445566778899aabbccddee7f
+    ciphertext: 36172a62cd5a53291f4f33c27665a5d2 | differing bits:  56 / 128 (43.8%)
+
+Average differing bits across all 128 single-bit flips: 63.27 / 128 (49.4%)
+
+=== Key bit-flip test ===
+Base plaintext : 00112233445566778899aabbccddeeff
+Base key       : 000102030405060708090a0b0c0d0e0f
+Base ciphertext: 69c4e0d86a7b0430d8cdb78070b4c55a
+
+Flip bit   0 (byte[ 0] bit 0): 0x00 -> 0x01 | key: 010102030405060708090a0b0c0d0e0f
+    ciphertext: 9bc9ea753251875a97f3a6cab33f112b | differing bits:  59 / 128 (46.1%)
+Flip bit   1 (byte[ 0] bit 1): 0x00 -> 0x02 | key: 020102030405060708090a0b0c0d0e0f
+    ciphertext: 68f9234fde3735ab98f504f7beb72b1c | differing bits:  61 / 128 (47.7%)
+Flip bit   2 (byte[ 0] bit 2): 0x00 -> 0x04 | key: 040102030405060708090a0b0c0d0e0f
+    ciphertext: 0061f524e39abc3dc16ee141cbbbd6e0 | differing bits:  63 / 128 (49.2%)
+Flip bit   3 (byte[ 0] bit 3): 0x00 -> 0x08 | key: 080102030405060708090a0b0c0d0e0f
+    ciphertext: 149c2774cdc4b953765cc2fc4b563350 | differing bits:  75 / 128 (58.6%)
+Flip bit   4 (byte[ 0] bit 4): 0x00 -> 0x10 | key: 100102030405060708090a0b0c0d0e0f
+    ciphertext: 4c8087a25a8bcb6b7df39391ebdac258 | differing bits:  59 / 128 (46.1%)
+Flip bit   5 (byte[ 0] bit 5): 0x00 -> 0x20 | key: 200102030405060708090a0b0c0d0e0f
+    ciphertext: 8f6e4319ab237107096b7b65f00cf0cf | differing bits:  62 / 128 (48.4%)
+Flip bit   6 (byte[ 0] bit 6): 0x00 -> 0x40 | key: 400102030405060708090a0b0c0d0e0f
+    ciphertext: f4c7cabd4acb4c390361f73c02681618 | differing bits:  54 / 128 (42.2%)
+Flip bit   7 (byte[ 0] bit 7): 0x00 -> 0x80 | key: 800102030405060708090a0b0c0d0e0f
+    ciphertext: ae175e68d1e005092e0bf7a4d354c485 | differing bits:  63 / 128 (49.2%)
+Flip bit   8 (byte[ 1] bit 0): 0x01 -> 0x00 | key: 000002030405060708090a0b0c0d0e0f
+    ciphertext: cea3c4e0a352f54875b7e57f03cdff6d | differing bits:  71 / 128 (55.5%)
+Flip bit   9 (byte[ 1] bit 1): 0x01 -> 0x03 | key: 000302030405060708090a0b0c0d0e0f
+    ciphertext: 0957f2f7e2ad44decc958c6512708b4e | differing bits:  54 / 128 (42.2%)
+Flip bit  10 (byte[ 1] bit 2): 0x01 -> 0x05 | key: 000502030405060708090a0b0c0d0e0f
+    ciphertext: c726991914f23a8f742e78952f8ef534 | differing bits:  73 / 128 (57.0%)
+Flip bit  11 (byte[ 1] bit 3): 0x01 -> 0x09 | key: 000902030405060708090a0b0c0d0e0f
+    ciphertext: 608d5262ec335f5bf03af723838ca4b8 | differing bits:  59 / 128 (46.1%)
+Flip bit  12 (byte[ 1] bit 4): 0x01 -> 0x11 | key: 001102030405060708090a0b0c0d0e0f
+    ciphertext: 078879fd7a9ee7171a41ad63b6917813 | differing bits:  60 / 128 (46.9%)
+Flip bit  13 (byte[ 1] bit 5): 0x01 -> 0x21 | key: 002102030405060708090a0b0c0d0e0f
+    ciphertext: acce68de04c3f3adba6c0e127df0eda1 | differing bits:  59 / 128 (46.1%)
+Flip bit  14 (byte[ 1] bit 6): 0x01 -> 0x41 | key: 004102030405060708090a0b0c0d0e0f
+    ciphertext: 4e9059f2576eb2f838f22c4e38c8c40b | differing bits:  61 / 128 (47.7%)
+Flip bit  15 (byte[ 1] bit 7): 0x01 -> 0x81 | key: 008102030405060708090a0b0c0d0e0f
+    ciphertext: 1af7c876d9b86478c4ab002bda7cab58 | differing bits:  60 / 128 (46.9%)
+Flip bit  16 (byte[ 2] bit 0): 0x02 -> 0x03 | key: 000103030405060708090a0b0c0d0e0f
+    ciphertext: bcf3040600ce9fcfbd34b017486b9997 | differing bits:  79 / 128 (61.7%)
+Flip bit  17 (byte[ 2] bit 1): 0x02 -> 0x00 | key: 000100030405060708090a0b0c0d0e0f
+    ciphertext: a3cc8ca3326537e2e446ca7ec15b6170 | differing bits:  68 / 128 (53.1%)
+Flip bit  18 (byte[ 2] bit 2): 0x02 -> 0x06 | key: 000106030405060708090a0b0c0d0e0f
+    ciphertext: 909ec2029b837b4e46d9d07cf7dc543c | differing bits:  72 / 128 (56.3%)
+Flip bit  19 (byte[ 2] bit 3): 0x02 -> 0x0a | key: 00010a030405060708090a0b0c0d0e0f
+    ciphertext: 41b9580eca10db3f079db339daac5ad3 | differing bits:  65 / 128 (50.8%)
+Flip bit  20 (byte[ 2] bit 4): 0x02 -> 0x12 | key: 000112030405060708090a0b0c0d0e0f
+    ciphertext: 95498cb40e1f7a4a314ce72b8eef8560 | differing bits:  66 / 128 (51.6%)
+Flip bit  21 (byte[ 2] bit 5): 0x02 -> 0x22 | key: 000122030405060708090a0b0c0d0e0f
+    ciphertext: 5453bd5053c9d66cd18e559b76d5e030 | differing bits:  58 / 128 (45.3%)
+Flip bit  22 (byte[ 2] bit 6): 0x02 -> 0x42 | key: 000142030405060708090a0b0c0d0e0f
+    ciphertext: 8d325a5506ee7643c0e92137ecc5efe7 | differing bits:  67 / 128 (52.3%)
+Flip bit  23 (byte[ 2] bit 7): 0x02 -> 0x82 | key: 000182030405060708090a0b0c0d0e0f
+    ciphertext: cfaba9fcfd57380b64091e8fbdebc80b | differing bits:  65 / 128 (50.8%)
+Flip bit  24 (byte[ 3] bit 0): 0x03 -> 0x02 | key: 000102020405060708090a0b0c0d0e0f
+    ciphertext: 7bea86bf55017015c1b9540fd1e4fe32 | differing bits:  63 / 128 (49.2%)
+Flip bit  25 (byte[ 3] bit 1): 0x03 -> 0x01 | key: 000102010405060708090a0b0c0d0e0f
+    ciphertext: deb1868be9e72dbb867ccc2a972df9a6 | differing bits:  72 / 128 (56.3%)
+Flip bit  26 (byte[ 3] bit 2): 0x03 -> 0x07 | key: 000102070405060708090a0b0c0d0e0f
+    ciphertext: 41cc26aa60802a458cf69a32ee2f6c2f | differing bits:  64 / 128 (50.0%)
+Flip bit  27 (byte[ 3] bit 3): 0x03 -> 0x0b | key: 0001020b0405060708090a0b0c0d0e0f
+    ciphertext: 727c1d1c634f753c6062cad9ca4157ad | differing bits:  70 / 128 (54.7%)
+Flip bit  28 (byte[ 3] bit 4): 0x03 -> 0x13 | key: 000102130405060708090a0b0c0d0e0f
+    ciphertext: 1965fa67bd21f10c621203c871d34416 | differing bits:  65 / 128 (50.8%)
+Flip bit  29 (byte[ 3] bit 5): 0x03 -> 0x23 | key: 000102230405060708090a0b0c0d0e0f
+    ciphertext: 6473a4b1a52cd92c7b5a7eb0df35c280 | differing bits:  66 / 128 (51.6%)
+Flip bit  30 (byte[ 3] bit 6): 0x03 -> 0x43 | key: 000102430405060708090a0b0c0d0e0f
+    ciphertext: 3fc8eb819a2b54cdee085be9e755b519 | differing bits:  60 / 128 (46.9%)
+Flip bit  31 (byte[ 3] bit 7): 0x03 -> 0x83 | key: 000102830405060708090a0b0c0d0e0f
+    ciphertext: 65e718cdc0c91f50be00742ca6f9100a | differing bits:  60 / 128 (46.9%)
+Flip bit  32 (byte[ 4] bit 0): 0x04 -> 0x05 | key: 000102030505060708090a0b0c0d0e0f
+    ciphertext: a3e6af37d6ada4b4e645792cdd159164 | differing bits:  64 / 128 (50.0%)
+Flip bit  33 (byte[ 4] bit 1): 0x04 -> 0x06 | key: 000102030605060708090a0b0c0d0e0f
+    ciphertext: ce784caa040f0f2ff282a05ff3c98828 | differing bits:  71 / 128 (55.5%)
+Flip bit  34 (byte[ 4] bit 2): 0x04 -> 0x00 | key: 000102030005060708090a0b0c0d0e0f
+    ciphertext: b211531afdc10096e4694aff8e83a854 | differing bits:  75 / 128 (58.6%)
+Flip bit  35 (byte[ 4] bit 3): 0x04 -> 0x0c | key: 000102030c05060708090a0b0c0d0e0f
+    ciphertext: 7d60d7d6b78f9c03e56698bdfeadbc67 | differing bits:  68 / 128 (53.1%)
+Flip bit  36 (byte[ 4] bit 4): 0x04 -> 0x14 | key: 000102031405060708090a0b0c0d0e0f
+    ciphertext: 2d270b482e8c56ed08e735c6a660fada | differing bits:  60 / 128 (46.9%)
+Flip bit  37 (byte[ 4] bit 5): 0x04 -> 0x24 | key: 000102032405060708090a0b0c0d0e0f
+    ciphertext: dbaefa3a65264b16a80f4e0ff2e38026 | differing bits:  64 / 128 (50.0%)
+Flip bit  38 (byte[ 4] bit 6): 0x04 -> 0x44 | key: 000102034405060708090a0b0c0d0e0f
+    ciphertext: 51f931c8aa5bac8d124511f78e4e5826 | differing bits:  64 / 128 (50.0%)
+Flip bit  39 (byte[ 4] bit 7): 0x04 -> 0x84 | key: 000102038405060708090a0b0c0d0e0f
+    ciphertext: deabee528f8f4632a6fb7172c23e128f | differing bits:  68 / 128 (53.1%)
+Flip bit  40 (byte[ 5] bit 0): 0x05 -> 0x04 | key: 000102030404060708090a0b0c0d0e0f
+    ciphertext: a0e244b9c7c0c81f8efe0c467c4e0639 | differing bits:  67 / 128 (52.3%)
+Flip bit  41 (byte[ 5] bit 1): 0x05 -> 0x07 | key: 000102030407060708090a0b0c0d0e0f
+    ciphertext: 2479797863052254de6302404943b4e3 | differing bits:  64 / 128 (50.0%)
+Flip bit  42 (byte[ 5] bit 2): 0x05 -> 0x01 | key: 000102030401060708090a0b0c0d0e0f
+    ciphertext: 69a5e9d5d214ed8c5ed0a4774ca29a99 | differing bits:  62 / 128 (48.4%)
+Flip bit  43 (byte[ 5] bit 3): 0x05 -> 0x0d | key: 00010203040d060708090a0b0c0d0e0f
+    ciphertext: a1c014f2e308d08660d47c8421673e78 | differing bits:  59 / 128 (46.1%)
+Flip bit  44 (byte[ 5] bit 4): 0x05 -> 0x15 | key: 000102030415060708090a0b0c0d0e0f
+    ciphertext: f87b9724c78b6a5ea91ea0349447d9ba | differing bits:  74 / 128 (57.8%)
+Flip bit  45 (byte[ 5] bit 5): 0x05 -> 0x25 | key: 000102030425060708090a0b0c0d0e0f
+    ciphertext: 3b764365adaba09772552a1d7748d7e2 | differing bits:  65 / 128 (50.8%)
+Flip bit  46 (byte[ 5] bit 6): 0x05 -> 0x45 | key: 000102030445060708090a0b0c0d0e0f
+    ciphertext: 33e6e43d2cfbb16de10781948eb8f1c5 | differing bits:  58 / 128 (45.3%)
+Flip bit  47 (byte[ 5] bit 7): 0x05 -> 0x85 | key: 000102030485060708090a0b0c0d0e0f
+    ciphertext: e41813ac34f814b2633a206b01608bda | differing bits:  67 / 128 (52.3%)
+Flip bit  48 (byte[ 6] bit 0): 0x06 -> 0x07 | key: 000102030405070708090a0b0c0d0e0f
+    ciphertext: 5d622f9a18886ac3e62024afcbd08953 | differing bits:  70 / 128 (54.7%)
+Flip bit  49 (byte[ 6] bit 1): 0x06 -> 0x04 | key: 000102030405040708090a0b0c0d0e0f
+    ciphertext: 14ca6054f8f27ae8816f06233e8addc4 | differing bits:  60 / 128 (46.9%)
+Flip bit  50 (byte[ 6] bit 2): 0x06 -> 0x02 | key: 000102030405020708090a0b0c0d0e0f
+    ciphertext: c8d967259fb2e966fe206b8f6bd1f3a2 | differing bits:  73 / 128 (57.0%)
+Flip bit  51 (byte[ 6] bit 3): 0x06 -> 0x0e | key: 0001020304050e0708090a0b0c0d0e0f
+    ciphertext: 48737b0643616f89f0ee4edb805e950a | differing bits:  64 / 128 (50.0%)
+Flip bit  52 (byte[ 6] bit 4): 0x06 -> 0x16 | key: 000102030405160708090a0b0c0d0e0f
+    ciphertext: e3931144a2dfb33ffea444f15f39379c | differing bits:  68 / 128 (53.1%)
+Flip bit  53 (byte[ 6] bit 5): 0x06 -> 0x26 | key: 000102030405260708090a0b0c0d0e0f
+    ciphertext: d4f7b098580211d1614211b21d79c6e5 | differing bits:  64 / 128 (50.0%)
+Flip bit  54 (byte[ 6] bit 6): 0x06 -> 0x46 | key: 000102030405460708090a0b0c0d0e0f
+    ciphertext: 699805bb532a375fa155e5bdd978c5eb | differing bits:  58 / 128 (45.3%)
+Flip bit  55 (byte[ 6] bit 7): 0x06 -> 0x86 | key: 000102030405860708090a0b0c0d0e0f
+    ciphertext: 26dac43ea661123cb2eb0cbf0fe2e349 | differing bits:  64 / 128 (50.0%)
+Flip bit  56 (byte[ 7] bit 0): 0x07 -> 0x06 | key: 000102030405060608090a0b0c0d0e0f
+    ciphertext: 84f79b511ae376e250db53360b0253cd | differing bits:  67 / 128 (52.3%)
+Flip bit  57 (byte[ 7] bit 1): 0x07 -> 0x05 | key: 000102030405060508090a0b0c0d0e0f
+    ciphertext: 497231f43a6d1024061a1b3c1730fc76 | differing bits:  57 / 128 (44.5%)
+Flip bit  58 (byte[ 7] bit 2): 0x07 -> 0x03 | key: 000102030405060308090a0b0c0d0e0f
+    ciphertext: 014b54e64443c1bfc15daad1385d19bc | differing bits:  62 / 128 (48.4%)
+Flip bit  59 (byte[ 7] bit 3): 0x07 -> 0x0f | key: 000102030405060f08090a0b0c0d0e0f
+    ciphertext: 85d4eee756f906bd5625db11702d22d1 | differing bits:  55 / 128 (43.0%)
+Flip bit  60 (byte[ 7] bit 4): 0x07 -> 0x17 | key: 000102030405061708090a0b0c0d0e0f
+    ciphertext: 1112cf2d6230125c1be05c6f3206dd96 | differing bits:  65 / 128 (50.8%)
+Flip bit  61 (byte[ 7] bit 5): 0x07 -> 0x27 | key: 000102030405062708090a0b0c0d0e0f
+    ciphertext: 2f8910bc9b29756debda1be51e9e0f77 | differing bits:  63 / 128 (49.2%)
+Flip bit  62 (byte[ 7] bit 6): 0x07 -> 0x47 | key: 000102030405064708090a0b0c0d0e0f
+    ciphertext: e18fde90133c55fc3c66cd951c0397ce | differing bits:  62 / 128 (48.4%)
+Flip bit  63 (byte[ 7] bit 7): 0x07 -> 0x87 | key: 000102030405068708090a0b0c0d0e0f
+    ciphertext: 34750aaa396a1e2821a513f89759bd4f | differing bits:  64 / 128 (50.0%)
+Flip bit  64 (byte[ 8] bit 0): 0x08 -> 0x09 | key: 000102030405060709090a0b0c0d0e0f
+    ciphertext: 46fbaa4dcf59fef29c9520a170599164 | differing bits:  59 / 128 (46.1%)
+Flip bit  65 (byte[ 8] bit 1): 0x08 -> 0x0a | key: 00010203040506070a090a0b0c0d0e0f
+    ciphertext: b5c927f9efbcf2979a3fa681a7addb58 | differing bits:  58 / 128 (45.3%)
+Flip bit  66 (byte[ 8] bit 2): 0x08 -> 0x0c | key: 00010203040506070c090a0b0c0d0e0f
+    ciphertext: d78162e519cee94a5d6efade625f1ee9 | differing bits:  72 / 128 (56.3%)
+Flip bit  67 (byte[ 8] bit 3): 0x08 -> 0x00 | key: 000102030405060700090a0b0c0d0e0f
+    ciphertext: 7bd2b3bd8a22df5cc40f69dfd82d2a82 | differing bits:  66 / 128 (51.6%)
+Flip bit  68 (byte[ 8] bit 4): 0x08 -> 0x18 | key: 000102030405060718090a0b0c0d0e0f
+    ciphertext: 499d018d4bd5b1be9c350d318cbabacd | differing bits:  66 / 128 (51.6%)
+Flip bit  69 (byte[ 8] bit 5): 0x08 -> 0x28 | key: 000102030405060728090a0b0c0d0e0f
+    ciphertext: f36a2d6f93e4f4b0ce92b1eaef36a728 | differing bits:  67 / 128 (52.3%)
+Flip bit  70 (byte[ 8] bit 6): 0x08 -> 0x48 | key: 000102030405060748090a0b0c0d0e0f
+    ciphertext: df745e4ba788033cfa864b3c23e9e606 | differing bits:  67 / 128 (52.3%)
+Flip bit  71 (byte[ 8] bit 7): 0x08 -> 0x88 | key: 000102030405060788090a0b0c0d0e0f
+    ciphertext: c6446a1884aef030d469b5e050f9a4c3 | differing bits:  48 / 128 (37.5%)
+Flip bit  72 (byte[ 9] bit 0): 0x09 -> 0x08 | key: 000102030405060708080a0b0c0d0e0f
+    ciphertext: 8080bd4e3378bef558ce311f4f439de1 | differing bits:  65 / 128 (50.8%)
+Flip bit  73 (byte[ 9] bit 1): 0x09 -> 0x0b | key: 0001020304050607080b0a0b0c0d0e0f
+    ciphertext: 0aad107ecb8ad02c8b481122ec9227de | differing bits:  58 / 128 (45.3%)
+Flip bit  74 (byte[ 9] bit 2): 0x09 -> 0x0d | key: 0001020304050607080d0a0b0c0d0e0f
+    ciphertext: 3cb95c4cda0d1eb38a7560b6af07e597 | differing bits:  67 / 128 (52.3%)
+Flip bit  75 (byte[ 9] bit 3): 0x09 -> 0x01 | key: 000102030405060708010a0b0c0d0e0f
+    ciphertext: 1ed7c70148c7469479f292c50cf15099 | differing bits:  61 / 128 (47.7%)
+Flip bit  76 (byte[ 9] bit 4): 0x09 -> 0x19 | key: 000102030405060708190a0b0c0d0e0f
+    ciphertext: f571f8bdb06b8452504cd5f5deb1a6a6 | differing bits:  54 / 128 (42.2%)
+Flip bit  77 (byte[ 9] bit 5): 0x09 -> 0x29 | key: 000102030405060708290a0b0c0d0e0f
+    ciphertext: 90703c8ffeb315471c1ef0208142d73a | differing bits:  63 / 128 (49.2%)
+Flip bit  78 (byte[ 9] bit 6): 0x09 -> 0x49 | key: 000102030405060708490a0b0c0d0e0f
+    ciphertext: 791cd9277ccaa5f3626b413d6bf810af | differing bits:  70 / 128 (54.7%)
+Flip bit  79 (byte[ 9] bit 7): 0x09 -> 0x89 | key: 000102030405060708890a0b0c0d0e0f
+    ciphertext: 1bc8816cbc14790dffda56c0a7cb61e9 | differing bits:  69 / 128 (53.9%)
+Flip bit  80 (byte[10] bit 0): 0x0a -> 0x0b | key: 000102030405060708090b0b0c0d0e0f
+    ciphertext: ab9d5c9030697cb94e29248118322e7f | differing bits:  55 / 128 (43.0%)
+Flip bit  81 (byte[10] bit 1): 0x0a -> 0x08 | key: 00010203040506070809080b0c0d0e0f
+    ciphertext: b2cc795bd71b2ffc8185e1937b28fe08 | differing bits:  58 / 128 (45.3%)
+Flip bit  82 (byte[10] bit 2): 0x0a -> 0x0e | key: 000102030405060708090e0b0c0d0e0f
+    ciphertext: 3aa7ec3e00356cf48f28f59644d7c636 | differing bits:  57 / 128 (44.5%)
+Flip bit  83 (byte[10] bit 3): 0x0a -> 0x02 | key: 00010203040506070809020b0c0d0e0f
+    ciphertext: bbbc1ffe690db80101e737e6914e3ef5 | differing bits:  70 / 128 (54.7%)
+Flip bit  84 (byte[10] bit 4): 0x0a -> 0x1a | key: 000102030405060708091a0b0c0d0e0f
+    ciphertext: a71b062047ae2903c517b35839a3a563 | differing bits:  66 / 128 (51.6%)
+Flip bit  85 (byte[10] bit 5): 0x0a -> 0x2a | key: 000102030405060708092a0b0c0d0e0f
+    ciphertext: 2c28ecf36ef78897e129bc9eb2549759 | differing bits:  52 / 128 (40.6%)
+Flip bit  86 (byte[10] bit 6): 0x0a -> 0x4a | key: 000102030405060708094a0b0c0d0e0f
+    ciphertext: 7cf8d36da217bd4520266545c0d0d856 | differing bits:  64 / 128 (50.0%)
+Flip bit  87 (byte[10] bit 7): 0x0a -> 0x8a | key: 000102030405060708098a0b0c0d0e0f
+    ciphertext: 8e6a24059abacd82f2bb2a47ba09988e | differing bits:  72 / 128 (56.3%)
+Flip bit  88 (byte[11] bit 0): 0x0b -> 0x0a | key: 000102030405060708090a0a0c0d0e0f
+    ciphertext: a43684c92ff78d12c18672415aa44453 | differing bits:  48 / 128 (37.5%)
+Flip bit  89 (byte[11] bit 1): 0x0b -> 0x09 | key: 000102030405060708090a090c0d0e0f
+    ciphertext: 0bc1793383f6d06e5c033c9fd3695661 | differing bits:  68 / 128 (53.1%)
+Flip bit  90 (byte[11] bit 2): 0x0b -> 0x0f | key: 000102030405060708090a0f0c0d0e0f
+    ciphertext: 2c2efe51d37bfdc89bf2892b897515cc | differing bits:  66 / 128 (51.6%)
+Flip bit  91 (byte[11] bit 3): 0x0b -> 0x03 | key: 000102030405060708090a030c0d0e0f
+    ciphertext: fde9e92dafaa1a5d879e27c9665a90ab | differing bits:  65 / 128 (50.8%)
+Flip bit  92 (byte[11] bit 4): 0x0b -> 0x1b | key: 000102030405060708090a1b0c0d0e0f
+    ciphertext: e34e103e177d7bcc665dcba941a9e5a9 | differing bits:  66 / 128 (51.6%)
+Flip bit  93 (byte[11] bit 5): 0x0b -> 0x2b | key: 000102030405060708090a2b0c0d0e0f
+    ciphertext: 092827ceb91f91ca2ff853f218681a4d | differing bits:  71 / 128 (55.5%)
+Flip bit  94 (byte[11] bit 6): 0x0b -> 0x4b | key: 000102030405060708090a4b0c0d0e0f
+    ciphertext: 7233bd72a10678eb41d84f9f61366910 | differing bits:  70 / 128 (54.7%)
+Flip bit  95 (byte[11] bit 7): 0x0b -> 0x8b | key: 000102030405060708090a8b0c0d0e0f
+    ciphertext: 56f57f2c82747b1519e0386dfd32a245 | differing bits:  73 / 128 (57.0%)
+Flip bit  96 (byte[12] bit 0): 0x0c -> 0x0d | key: 000102030405060708090a0b0d0d0e0f
+    ciphertext: 66b891ac116d6167e50c911081293e10 | differing bits:  68 / 128 (53.1%)
+Flip bit  97 (byte[12] bit 1): 0x0c -> 0x0e | key: 000102030405060708090a0b0e0d0e0f
+    ciphertext: bda29566b407ce113a8b6718b695a8af | differing bits:  66 / 128 (51.6%)
+Flip bit  98 (byte[12] bit 2): 0x0c -> 0x08 | key: 000102030405060708090a0b080d0e0f
+    ciphertext: a73bf4b7b121a4407a4f5c851d5dd106 | differing bits:  65 / 128 (50.8%)
+Flip bit  99 (byte[12] bit 3): 0x0c -> 0x04 | key: 000102030405060708090a0b040d0e0f
+    ciphertext: 284ef344cddf0afe29817a26705b1f9c | differing bits:  61 / 128 (47.7%)
+Flip bit 100 (byte[12] bit 4): 0x0c -> 0x1c | key: 000102030405060708090a0b1c0d0e0f
+    ciphertext: 7ec623a50bc7d5a71140ee65b853a1d1 | differing bits:  65 / 128 (50.8%)
+Flip bit 101 (byte[12] bit 5): 0x0c -> 0x2c | key: 000102030405060708090a0b2c0d0e0f
+    ciphertext: 142ea9e391c5082d9130ebcdde4d2897 | differing bits:  78 / 128 (60.9%)
+Flip bit 102 (byte[12] bit 6): 0x0c -> 0x4c | key: 000102030405060708090a0b4c0d0e0f
+    ciphertext: a31122fce4a9bc270b64d7835f7a7b8d | differing bits:  65 / 128 (50.8%)
+Flip bit 103 (byte[12] bit 7): 0x0c -> 0x8c | key: 000102030405060708090a0b8c0d0e0f
+    ciphertext: fc636aa97989db8c140851a8f25e6625 | differing bits:  69 / 128 (53.9%)
+Flip bit 104 (byte[13] bit 0): 0x0d -> 0x0c | key: 000102030405060708090a0b0c0c0e0f
+    ciphertext: 23afe5ff854311bf7ff17ea67dd2cc2d | differing bits:  63 / 128 (49.2%)
+Flip bit 105 (byte[13] bit 1): 0x0d -> 0x0f | key: 000102030405060708090a0b0c0f0e0f
+    ciphertext: 1537626b635e41a11c62770da8532ad9 | differing bits:  64 / 128 (50.0%)
+Flip bit 106 (byte[13] bit 2): 0x0d -> 0x09 | key: 000102030405060708090a0b0c090e0f
+    ciphertext: 37ecead18934746fee9a442fdf944787 | differing bits:  66 / 128 (51.6%)
+Flip bit 107 (byte[13] bit 3): 0x0d -> 0x05 | key: 000102030405060708090a0b0c050e0f
+    ciphertext: 12d14eeaa9ecf95d7e9e27be86492162 | differing bits:  73 / 128 (57.0%)
+Flip bit 108 (byte[13] bit 4): 0x0d -> 0x1d | key: 000102030405060708090a0b0c1d0e0f
+    ciphertext: 4dbe14348d7873e0fc93f6def937894c | differing bits:  60 / 128 (46.9%)
+Flip bit 109 (byte[13] bit 5): 0x0d -> 0x2d | key: 000102030405060708090a0b0c2d0e0f
+    ciphertext: ac7d7c2d6130409178cbbcaf9de2ace1 | differing bits:  63 / 128 (49.2%)
+Flip bit 110 (byte[13] bit 6): 0x0d -> 0x4d | key: 000102030405060708090a0b0c4d0e0f
+    ciphertext: b667a6f94ea985f7d432e1e9536f944c | differing bits:  62 / 128 (48.4%)
+Flip bit 111 (byte[13] bit 7): 0x0d -> 0x8d | key: 000102030405060708090a0b0c8d0e0f
+    ciphertext: 5898ad4ef25e4ca092093086c19f12c2 | differing bits:  54 / 128 (42.2%)
+Flip bit 112 (byte[14] bit 0): 0x0e -> 0x0f | key: 000102030405060708090a0b0c0d0f0f
+    ciphertext: cac4abc609afecd0fefa998e42b18d55 | differing bits:  53 / 128 (41.4%)
+Flip bit 113 (byte[14] bit 1): 0x0e -> 0x0c | key: 000102030405060708090a0b0c0d0c0f
+    ciphertext: 4416986670af5dc87d1fdca375448f0b | differing bits:  62 / 128 (48.4%)
+Flip bit 114 (byte[14] bit 2): 0x0e -> 0x0a | key: 000102030405060708090a0b0c0d0a0f
+    ciphertext: 59fc06580e58439fac115c137ada5556 | differing bits:  57 / 128 (44.5%)
+Flip bit 115 (byte[14] bit 3): 0x0e -> 0x06 | key: 000102030405060708090a0b0c0d060f
+    ciphertext: 189ea95b5b425b840754988bada4b507 | differing bits:  65 / 128 (50.8%)
+Flip bit 116 (byte[14] bit 4): 0x0e -> 0x1e | key: 000102030405060708090a0b0c0d1e0f
+    ciphertext: b5a3a102fa2cfe798c059b6e74943eb7 | differing bits:  63 / 128 (49.2%)
+Flip bit 117 (byte[14] bit 5): 0x0e -> 0x2e | key: 000102030405060708090a0b0c0d2e0f
+    ciphertext: 315b97216d977512c5b4bbe87d764526 | differing bits:  61 / 128 (47.7%)
+Flip bit 118 (byte[14] bit 6): 0x0e -> 0x4e | key: 000102030405060708090a0b0c0d4e0f
+    ciphertext: 5300ac9aba33b1af6a34b44a720ebf8b | differing bits:  59 / 128 (46.1%)
+Flip bit 119 (byte[14] bit 7): 0x0e -> 0x8e | key: 000102030405060708090a0b0c0d8e0f
+    ciphertext: bdaa6e965de144b6f222c04713288375 | differing bits:  67 / 128 (52.3%)
+Flip bit 120 (byte[15] bit 0): 0x0f -> 0x0e | key: 000102030405060708090a0b0c0d0e0e
+    ciphertext: 74db6c596f02c433989fb6c9cd317f15 | differing bits:  52 / 128 (40.6%)
+Flip bit 121 (byte[15] bit 1): 0x0f -> 0x0d | key: 000102030405060708090a0b0c0d0e0d
+    ciphertext: 4ef7c37b631fc3201ace81c29bdbd283 | differing bits:  58 / 128 (45.3%)
+Flip bit 122 (byte[15] bit 2): 0x0f -> 0x0b | key: 000102030405060708090a0b0c0d0e0b
+    ciphertext: 01eed0dfe21461913825dbf45e9b39e1 | differing bits:  62 / 128 (48.4%)
+Flip bit 123 (byte[15] bit 3): 0x0f -> 0x07 | key: 000102030405060708090a0b0c0d0e07
+    ciphertext: 2566df81bd2e75dc6437d8324201b8d6 | differing bits:  73 / 128 (57.0%)
+Flip bit 124 (byte[15] bit 4): 0x0f -> 0x1f | key: 000102030405060708090a0b0c0d0e1f
+    ciphertext: 229e0d003a18ff2d399f34fbfdbfa698 | differing bits:  65 / 128 (50.8%)
+Flip bit 125 (byte[15] bit 5): 0x0f -> 0x2f | key: 000102030405060708090a0b0c0d0e2f
+    ciphertext: df82f1da47fb38fc23ab7b9b441671af | differing bits:  59 / 128 (46.1%)
+Flip bit 126 (byte[15] bit 6): 0x0f -> 0x4f | key: 000102030405060708090a0b0c0d0e4f
+    ciphertext: 150b97595689dd74ccc2bafa2843676a | differing bits:  64 / 128 (50.0%)
+Flip bit 127 (byte[15] bit 7): 0x0f -> 0x8f | key: 000102030405060708090a0b0c0d0e8f
+    ciphertext: c172126d2287b6b63cd85ba2c266cff6 | differing bits:  61 / 128 (47.7%)
+
+Average differing bits across all 128 single-bit flips: 63.85 / 128 (49.9%)
+
